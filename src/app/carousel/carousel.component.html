@@ -1,29 +1,3 @@
-
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Carousel</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -32,19 +6,16 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/>
-        </svg> -->
         <img style="width:auto; height: auto;" src="../../assets/images/carrots2.jpg">
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <h1>Register Today</h1>
+            <p>Sign up today to personalize you experience and get access to extra features</p>
             <p><a class="btn btn-lg btn-primary" href="">Sign up today</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
         <div class="container">
           <div class="carousel-caption">
             <h1>Another example headline.</h1>
@@ -55,7 +26,6 @@
       </div>
       <div class="carousel-item">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
         <div class="container">
           <div class="carousel-caption text-end">
             <h1>One more for good measure.</h1>
@@ -65,16 +35,21 @@
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
-    </button>
+    </button> -->
   </div>
-
 
   <!-- Marketing messaging and featurettes
   ================================================== -->
@@ -95,15 +70,15 @@
         <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
         <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="../../assets/images/blue.jpg" alt="firstCircle">
 
-        <h2>Outstanding Fertilizer</h2>
+        <h2>Fertilizer</h2>
         <p>Worm castings are full of water soluble nutrients that are immediately available to the plants</p>
         <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
         <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="../../assets/images/sprouts.jpg" alt="firstCircle">
-        <h2>Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
+        <h2>Air Tunnels</h2>
+        <p>Garden worms create small tunnels, which help air penetrate down into the roots</p>
         <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
@@ -162,7 +137,7 @@
     <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
   </footer>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <!-- Sources -->
             <!-- <cite>https://www.kegacpa.com/consider-the-tax-advantages-of-investing-in-qualified-small-business-stock/</cite> -->

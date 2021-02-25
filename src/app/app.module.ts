@@ -6,7 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { LoginComponent } from './login/login.component';
-// import { SideNavComponent } from './side-nav/side-nav.component';
+import { NavbarComponent } from './navbar/navbar.component';
+
 //Material
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
@@ -18,7 +19,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   declarations: [
     AppComponent,
     LoginComponent,
-    CarouselComponent
+    CarouselComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
