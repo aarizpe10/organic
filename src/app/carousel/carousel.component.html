@@ -1,9 +1,9 @@
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
+  <ng-carousel id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <ng-template class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
+    </ng-template>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img style="width:auto; height: auto;" src="../../assets/images/carrots2.jpg">
@@ -16,6 +16,7 @@
         </div>
       </div>
       <div class="carousel-item">
+        <img style="width:auto; height: auto;" src="../../assets/images/carrots2.jpg">
         <div class="container">
           <div class="carousel-caption">
             <h1>Another example headline.</h1>
@@ -25,7 +26,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img style="width:auto; height: auto;" src="../../assets/images/carrots2.jpg">
         <div class="container">
           <div class="carousel-caption text-end">
             <h1>One more for good measure.</h1>
@@ -43,13 +44,12 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div>
+  </ng-carousel>
+  <br>
   <!-- Marketing messaging and featurettes
   ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
+  <!-- Wrap the rest of the page in another container to center all the content. -->  
   <div class="container marketing">
-
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4">
@@ -124,3 +124,4 @@
     <!-- Sources -->
             <!-- <cite>https://www.kegacpa.com/consider-the-tax-advantages-of-investing-in-qualified-small-business-stock/</cite> -->
             <!-- <cite>https://unsplash.com/</cite> -->
+            <router-outlet></router-outlet>

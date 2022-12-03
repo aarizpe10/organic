@@ -15,6 +15,14 @@ import { MatListModule } from '@angular/material/list';
 import { from } from 'rxjs';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { CommonModule } from '@angular/common';
+
+const routes: Routes = [
+  { path: 'login', component: LoginComponent },
+  { path: 'carousel', component: CarouselComponent },
+];
 
 @NgModule({
   declarations: [
@@ -32,11 +40,17 @@ import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
     MatListModule,
     NgbModule,
     NgbPaginationModule,
-    NgbAlertModule
+    NgbAlertModule,
+    CommonModule,
+    RouterModule.forRoot(routes),
   ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [
     AppComponent,
-    ]
+    ],
+    schemas: [
+      CUSTOM_ELEMENTS_SCHEMA
+    ],
 })
 export class AppModule { }

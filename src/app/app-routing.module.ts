@@ -5,8 +5,8 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
+  {path: 'home', component: CarouselComponent},
   {path: 'navbar', component: NavbarComponent},
-  {path: '', component: CarouselComponent},
   {path: 'login', component: LoginComponent},
 
 ];
